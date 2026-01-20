@@ -13,7 +13,7 @@ In this project, we'll use the **animation** property along with **keyframes** t
 - [ ] **8-9 Planets:** There are at least 8 planets defined in the HTML and styled in the CSS.
 - [ ] **Circular Motion:** All planets move in a circular orbit around the Sun using `rotate()` and `translateX()` keyframes.
 - [ ] **Shooting Star:** At least one shooting star is animated to "fly" across the screen.
-- [ ] **Background:** The `body` has a space-themed background image that covers the entire viewport.
+- [x] **Background:** The `body` has a space-themed background image that covers the entire viewport.
 - [ ] **Basic Documentation:** The CSS and HTML include initial comments explaining what the code is doing.
 
 ## **Part II: Proportions

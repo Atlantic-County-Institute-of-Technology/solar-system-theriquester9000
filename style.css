@@ -21,6 +21,28 @@ body.space {
 
 .planets {
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	top: 45%;
+	left: 45%;
+	animation: orbit 1s infinite ease-in;
+}
+
+.star {
+	position: absolute;
+	top: 60%;
+	left: 60%;
+	animation: spin 10s infinite;
+}
+
+
+
+@keyframes spin {
+	0% {
+		transform: rotate(360deg);
+	}
+	25%{
+		transform: rotate(360deg);
+	}
+	50%{
+		transform: rotate (360deg);
+	}
 }
