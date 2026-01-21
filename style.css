@@ -1,10 +1,10 @@
 body.space {
-	
 	overflow: hidden; /* anything that exceeds the bounds of the screen will be hidden */
 	background: url('images/bg.jpg');
 	background-size: cover;
 	margin: 0;
-	height: 100vh;
+	height: -80px;
+	right: 50px;
 	display: flex;
 	align-items: center; /* centers all children along a single axis */
 	justify-content: center;
@@ -23,26 +23,26 @@ body.space {
 	position: absolute;
 	top: 45%;
 	left: 45%;
-	animation: orbit 1s infinite ease-in;
+	animation: spin 10s linear infinite ;
+}
+
+.venus {
+	animation: orbit 10s linear infinite;
 }
 
 .star {
 	position: absolute;
 	top: 60%;
 	left: 60%;
-	animation: spin 10s infinite;
+	animation: spin 10s linear infinite;
 }
 
+@keyframes spin{ 
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
 
-
-@keyframes spin {
-	0% {
-		transform: rotate(360deg);
-	}
-	25%{
-		transform: rotate(360deg);
-	}
-	50%{
-		transform: rotate (360deg);
-	}
+@keyframes orbit{
+	0% { transform: rotate(0deg) translatex(-20px) translatey(-250px) rotate(0deg);}
+	100% {transform: rotate(360deg) translatex(-20px) translatey(-250px) rotate(-360deg);}
 }
