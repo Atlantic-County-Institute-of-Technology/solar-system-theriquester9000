@@ -3,8 +3,7 @@ body.space {
 	background: url('images/bg.jpg');
 	background-size: cover;
 	margin: 0;
-	height: -80px;
-	right: 50px;
+	height: 100vh;
 	display: flex;
 	align-items: center; /* centers all children along a single axis */
 	justify-content: center;
@@ -21,20 +20,71 @@ body.space {
 
 .planets {
 	position: absolute;
-	top: 45%;
-	left: 45%;
-	animation: spin 10s linear infinite ;
+	/* top: 45%;
+	left: 45%; */
+	animation: spin 15s linear infinite ;
 }
 
-.venus {
-	animation: orbit 10s linear infinite;
-}
-
-.star {
+#sun {
 	position: absolute;
-	top: 60%;
-	left: 60%;
-	animation: spin 10s linear infinite;
+	width: 180px;
+	height:180px;
+}
+
+#mercury {
+	width: 30px;
+	height: 30px;
+	animation: mercury_orbit 2s linear infinite;
+}
+
+@keyframes mercury_orbit{
+
+	0% {transform: rotate(0deg) translatex(130px);}
+	100% {transform: rotate(360deg) translatex(130px);}
+}
+
+#venus {
+	width: 40px;
+	height: 40px;
+	animation: venus_orbit 3s linear infinite;
+}
+
+@keyframes venus_orbit{
+	0% {transform: rotate(0deg) translatex(180px);}
+	100% {transform: rotate(360deg) translatex(180px);}
+}
+
+#earth {
+	width: 60px;
+	height: 60px;
+	animation: earth_orbit 4.5s linear infinite
+}
+
+@keyframes earth_orbit {
+	0% {transform: rotate(0deg) translatex(240px);}
+	100% {transform: rotate(360deg) translatex(240px);}
+}
+
+#mars {
+	width: 25px;
+	height: 40px;
+	animation: mars_orbit 8.4s linear infinite;
+}
+
+@keyframes mars_orbit{
+	0% {transform: rotate(0deg) translatex(280px);}
+	100% {transform: rotate(360deg) translatex(280px);}
+}
+
+#jupiter {
+	width: 100px;
+	height: 100px;
+	animation: fatty_orbit 53s linear infinite;
+}
+
+@keyframes fatty_orbit {
+	0% {transform: rotate(0deg) translatex(350px);}
+	100% {transform: rotate(360deg) translatex(350px);}
 }
 
 @keyframes spin{ 
@@ -42,7 +92,3 @@ body.space {
 	to{transform: rotate(360deg);}
 }
 
-@keyframes orbit{
-	0% { transform: rotate(0deg) translatex(-20px) translatey(-250px) rotate(0deg);}
-	100% {transform: rotate(360deg) translatex(-20px) translatey(-250px) rotate(-360deg);}
-}
