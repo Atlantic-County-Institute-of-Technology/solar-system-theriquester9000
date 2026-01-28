@@ -87,6 +87,39 @@ body.space {
 	100% {transform: rotate(360deg) translatex(350px);}
 }
 
+#saturn {
+	width: 90px;
+	height: 90px;
+	animation: saturn_orbit 131s linear infinite;
+}
+
+@keyframes saturn_orbit {
+	0% {transform: rotate(0deg) translatex(450px);}
+	100% {transform: rotate(360deg) translatex(450px);}
+}
+
+#uranus {
+	width: 70px;
+	height: 70px;
+	animation: uranus_orbit 373s linear infinite;
+}
+
+@keyframes uranus_orbit {
+	0% {transform: rotate(0deg) translatex(550px);}
+	100% {transform: rotate(360deg) translatex(550px);}
+}
+
+#neptune {
+	width: 65px;
+	height: 65px;
+	animation: neptune_orbit 731s linear infinite;
+}
+
+@keyframes neptune_orbit {
+	0% {transform: rotate(0deg) translatex(650px);}
+	100% {transform: rotate(360deg) translatex(650px);}
+}
+
 @keyframes spin{ 
 	from{transform: rotate(0deg);}
 	to{transform: rotate(360deg);}
